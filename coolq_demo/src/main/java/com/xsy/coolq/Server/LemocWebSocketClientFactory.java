@@ -17,12 +17,11 @@ public class LemocWebSocketClientFactory {
     public static WebSocketClient getLemocWebSocketClient() throws Exception{
         if(webSocketClient==null){
             /*
-            *加QQ:3430538819可以进行测试
             *
-            * ws://106.54.229.46:25303该地址是我服务器地址，导入项目运行，可以查看结果
+            * ws://127.0.0.1:25303该地址是我服务器地址，导入项目运行，可以查看结果
             *
             * */
-            webSocketClient = new LemocWebSocketClient(new URI("ws://106.54.229.46:25303"),new Draft_6455());
+            webSocketClient = new LemocWebSocketClient(new URI("ws://127.0.0.1:25303"),new Draft_6455());
         }
         return webSocketClient;
     }
